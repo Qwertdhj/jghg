@@ -1,0 +1,65 @@
+body
+{
+    background: beige;
+}
+#exemple1 {
+    overflow: hidden;
+    width: 50px;
+    position:absolute;
+    top: 400px;
+    transition: 0;
+    height: 50px;
+    left: 275px;
+    opacity: 0;
+    border: 5px solid beige;
+    background: gray;
+    border-radius: 100px;
+  }
+  #ShowHide1:hover #exemple1 {
+    opacity: 1;
+
+  }
+ .FHH:hover::before
+ {
+    content: '';
+    position: absolute;
+    left: 288px;
+    transition: 0;
+    z-index: 9;
+    width: 20px;
+    height: 24px;
+    border-radius: 0 0 20px 0;
+    background: none;
+    top: 379px;
+    box-shadow: 6px 2px 0px beige;
+ }
+ .FHH:hover::after
+ {
+ 
+    content: '';
+    position: absolute;
+    left: 263px;
+    transition: 0.3s;
+    z-index: 9;
+    width: 20px;
+    transition: 0.3s;
+    height: 10px;
+    border-radius: 20px;
+    background: none;
+    top: 448px;
+    box-shadow: 11px 2px 0px beige;
+
+ }
+.FHH 
+{
+    height: 450px;
+    width: 300px;
+    background: antiquewhite;
+    z-index: 9;
+    position: absolute;
+    transition: 0.3s;
+}
+#ShowHide1 img
+{
+    border-radius: 20px;
+}

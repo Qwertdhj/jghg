@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Appu</title>
+	<link rel="stylesheet" type="text/css" title="default" href="../css/main.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/@barba/core"></script>
+
+<!-- jsdelivr -->
+<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <!-- Link Swiper's CSS -->
+</head>
+<body>
+<div class="fon_Appu_QweS12690D">
+    <img src="https://img.championat.com/c/1200x900/news/big/z/n/morbius-stal-odnim-iz-hudshih-filmov-po-marvel_16487198191828836615.jpg" alt="">
+    <div class="cruge_Appu_QweS12690D"></div>
+</div>    
+<div class="menu_Appu_QweS12690D">
+    <a href="/index.html"><ion-icon class="home_Appu_QweS12609D" name="home"></ion-icon></a>
+    <div class="line_Appu_QweS12690D"></div>
+    <div class="lattice_Appu_QweS12690D">#</div>
+    <ion-icon class="notifications_Appu_QweS12609D" name="notifications"></ion-icon>
+    <ion-icon class="messanger_Appu_QweS12609D" name="mail"></ion-icon>
+    <ion-icon class="MyList_Appu_QweS12690D" name="bookmark"></ion-icon>
+  </div>
+
+  <a href="../index.html">fdn</a>
+  <script>
+  barba.init({
+  transitions: [{
+    name: 'opacity-transition',
+    leave(data) {
+      return gsap.to(data.current.container, {
+        opacity: 0
+      });
+    },
+    enter(data) {
+      return gsap.from(data.next.container, {
+        opacity: 0
+      });
+    }
+  }]
+});
+  </script>
+</body>
+</html>

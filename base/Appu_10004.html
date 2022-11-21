@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>js .html demo</title>
+    <!-- Не забываем подключить библиотеку -->
+    <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+ 
+<div id="block">
+Hello World
+
+</div>
+ 
+<br>
+<a onclick="setNewEntry('Pressed button 1'); return false;" href="./Appu_10004.html">Button 1</a><br>
+<a onclick="setNewEntry('Pressed button 2'); return false;" href="#">Button 2</a><br>
+<a onclick="setNewEntry('Pressed button 3'); return false;" href="#">Button 3</a><br>
+<a onclick="setNewEntry(''); return false;" href="#">Clear block</a><br>
+ 
+<script type="text/javascript">
+    function setNewEntry(entry) {
+        //#block - найти элемент по индентификатору
+        //.block - найти по имени класса
+        $('#block').html(entry);
+    }
+ 
+</script>
+ 
+</body>
+</html>
